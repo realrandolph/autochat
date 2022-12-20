@@ -1,4 +1,4 @@
-const ws = new WebSocket('wss://chat.autothink.co');
+const ws = new WebSocket('wss://chat.[domain]');
 const form = document.getElementById('form');
 const messagesDiv = document.getElementById('messages');
 const inputBox = document.getElementById('message');
@@ -27,5 +27,5 @@ ws.onmessage = function(message) {
 	console.log(`Received message from server: ${message.data}`);
 	messagesDiv.innerHTML += `<p>${message.data}</p>`;
 	messagesDiv.scrollTop = messagesDiv.scrollHeight;
-	
+
 };
