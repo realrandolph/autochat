@@ -8,11 +8,11 @@
     <h1>AUTOCHAT</h1>
 	<div id="messages"></div>
     <form id="form">
-      <label for="clientId">Client ID:</label>
-      <input type="text" id="clientId" value="name">
+      <label for="clientName" pattern="[A-Za-z0-9]+">Client Name:</label>
+      <input type="text" id="clientName" value="anon">
 	 
       <label for="message">Message:</label>
-      <input type="text" id="message">
+      <input type="text" id="message" pattern="^[^<>]*$">
       <br>
       <button type="submit">Send</button>
     </form>
