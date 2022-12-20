@@ -1,4 +1,4 @@
-const ws = new WebSocket('wss://chat.autothink.co');
+const ws = new WebSocket('wss://chat.[domain]');
 const form = document.getElementById('form');
 const messagesDiv = document.getElementById('messages');
 
