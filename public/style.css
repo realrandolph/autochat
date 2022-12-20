@@ -1,0 +1,69 @@
+body {
+  background-color: #333;
+  color: #00dd88;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+#form {
+  width: 80%;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#form label {
+  font-size: 1em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+#form #clientId {
+  width: 10%;
+  padding: 0.5em;
+  border: none;
+  border-radius: 0.5em;
+  background-color: #aa10aa;
+  color: #00dd88;
+  font-size: 1em;
+}
+
+#form #message {
+  flex: 1;
+  padding: 0.5em;
+  border: none;
+  border-radius: 0.5em;
+  background-color: #aa10aa;
+  color: #00dd88;
+  font-size: 1em;
+}
+
+#form button[type="submit"] {
+  margin-left: 1em;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0.5em;
+  background-color: #5b0dd9;
+  color: #00dd88;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#messages {
+  width: 80%;
+  margin: 2em auto;
+  padding: 1em;
+  background-color: #aa10aa;
+  border-radius: 0.5em;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  max-height: 60vh;
+}
